@@ -83,5 +83,5 @@ func init() {
 	generateCmd.Flags().StringP("output", "o", "", "Output directory for deb package file.")
 	generateCmd.Flags().StringP("deb-json", "j", "deb.json", "Path to the deb.json file (default: deb.json)")
 	generateCmd.Flags().StringP("version", "v", "", "Version of the package")
-	generateCmd.Flags().StringP("arch", "a", "", "Architecture of the package (ex: amd64)")
+	generateCmd.Flags().StringP("arch", "a", "amd64", "Architecture of the package (ex: amd64)")
 }
