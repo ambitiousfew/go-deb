@@ -19,12 +19,20 @@
   ],
   "files": [
     {
-      "from": "path/src",
+      "from": "build/!arch!/!name!",
       "to": "/usr/bin",
-      "base": "path/"
+      "base": "build/!arch!/",
+      "fperm": "0755"
     }
   ],
-  "copyrights": [],
+  "copyrights": [
+    {
+      "files": "*",
+      "copyright": "2022 ambitiousfew",
+      "license": "MIT",
+      "file": "LICENSE"
+    }
+  ],
   "essential": false,
   "depends": [
     "libc6 (>= 2.2.1)",
@@ -46,9 +54,7 @@
     "libc6 (>= 2.2.1)",
     "exim | mail-transport-agent"
   ],
-  "built-using": [
-    "gcc-4.6 (= 4.6.0-11)"
-  ],
+  "built-using": "gcc-4.6 (= 4.6.0-11)",
   "description": "short desc of the program",
   "description-extended": "long desc of the program with multiline",
   "package-type": "deb",
